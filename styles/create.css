@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+  
+  }
+  
+  body {
+    display: grid;
+    grid-template-rows: 60px auto 60px;
+    grid-gap: 30px;
+    height: 100vh;
+  }
+  
+  main {
+    overflow: scroll;
+  }
+  
+  h1 {
+    background-color: hotpink;
+    margin: auto;
+    width: auto;
+    border-radius:25px;
+    padding: 20px;
+    box-shadow: 10px 10px 5px grey;
+  }
+  
+  footer {
+    background-color: navy;
+    color: white;
+  }
+  
+  .card {
+    border: 1px solid navy;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 5px grey;
+  }
+  
+  .card__bookmark {
+  
+  }
+  
+  .tags {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .tags__item {
+    padding: 8px;
+    border: 1px solid navy;
+    border-radius: 8px;
+  }
+  .footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    border-top: 2px solid #dedede;
+    display: flex;
+    z-index: 300;
+}
+
+.footer__link {
+    flex: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+    background-color: none;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+footer > a:hover {
+    background-color: #dedede;
+}
+
+footer > a:active {
+    background-color: #f1f1f1;
+}
+
+.active {
+    background-color: #f1f1f1;
+}
+
+footer > a > img {
+    height: 25px;
+}
+.insert {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.insert__headline {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.input {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input__items {
+  width: auto;
+  margin-bottom: 15px;
+}
+
+.input__title-field {
+  width: 100%;
+  border: 1px solid #3d3d3d;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: none;
+}
+
+.input__title-field:focus-visible {
+  border: 1px solid #2e778e;
+  outline: #2e778e;
+  border-radius: 10px;
+  color: #2e778e;
+}
+
+.input__flex {
+  display: flex;
+  justify-content: center;
+}
