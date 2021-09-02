@@ -1,0 +1,6 @@
+@import './main.css';
+@import './create.css';
+
+.main__hidden {
+    display:none;
+}
